@@ -13,3 +13,5 @@ class Schemes:
     WEBDAV = "webdav"
     WEBDAVS = "webdavs"
     MEMORY = "memory"
+    BOX = "box"
+    
