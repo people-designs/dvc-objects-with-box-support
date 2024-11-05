@@ -14,6 +14,10 @@ if TYPE_CHECKING:
 
 
 known_implementations = {
+    Schemes.BOX: {
+        "class": "dvc_box.BoxFileSystem",
+        "err": "box is supported, but requires 'dvc-box' to be installed",
+    },
     Schemes.LOCAL: {"class": "dvc_objects.fs.local.LocalFileSystem"},
     Schemes.MEMORY: {"class": "dvc_objects.fs.memory.MemoryFileSystem"},
     Schemes.AZURE: {
@@ -22,7 +26,7 @@ known_implementations = {
     },
     Schemes.GDRIVE: {
         "class": "dvc_gdrive.GDriveFileSystem",
-        "err": ("gdrive is supported, but requires 'dvc-gdrive' to be installed"),
+        "err": "gdrive is supported, but requires 'dvc-gdrive' to be installed",
     },
     Schemes.GS: {
         "class": "dvc_gs.GSFileSystem",
