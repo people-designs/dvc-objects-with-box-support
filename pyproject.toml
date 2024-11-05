@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
 
 [project]
-name = "dvc-objects"
+name = "dvc-objects-with-box-support"
 description = "dvc objects - filesystem and object-db level abstractions to use in dvc and dvc-data"
 readme = "README.rst"
 license = {text = "Apache-2.0"}
